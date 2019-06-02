@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>View Test</title>
+</head>
+<body>
+    <div>
+        欢迎来到测试页面！
+    </div>
+    <span>
+        <a th:if="${session.loginUser == null}" href="http://login.huaweiapims.com:9999/view/login?target=http://www.huaweiapims.com:8889/view/index">登录</a>
+        <a th:unless="${session.loginUser == null}" href="http://login.huaweiapims.com:9999/logout?target=http://www.huaweiapims.com:8889/view/index">退出</a>
+    </span>
+    <p th:unless="${session.loginUser == null}">
+        <span style="color: deepskyblue;" th:text="${session.loginUser.username}"></span>
+        已登录
+    </p>
+</body>
+</html>

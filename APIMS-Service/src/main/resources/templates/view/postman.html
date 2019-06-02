@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../webjars/layui/css/layui.css">
+    <script type="text/javascript" src="../../webjars/layui/layui.js"></script>
+    <script type="text/javascript" src="../../webjars/js/jquery.js"></script>
+    <title>Postman</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#get_postman").click(function () {
+                $("#result_postman").html("wait..."); //val()
+            });
+            return false;
+        });
+    </script>
+</head>
+
+<body>
+    <div style="vertical-align: middle;text-align: center;">
+        <div>
+            <textarea style="margin-top: 50px;width: 600px; height: 200px;background-color: black;color: white">请输入需要转换的Swagger类型的json数据</textarea>
+            <br/><br/>
+        </div>
+        <button class="layui-btn" style="text-align:center;" id="get_postman">Test</button>
+        <br/><br/>
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>Responses</legend>
+        </fieldset>
+        <div id="result_postman"></div>
+    </div>
+</body>
+</html>

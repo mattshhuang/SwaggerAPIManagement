@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome</title>
+    <style type="text/css">
+        #biankuang {
+        border: none black;   /*设置边框样式跟颜色*/
+        /* margin: 0 auto;   /*设置div居中 */ */
+        width: auto;  /*设置div宽度 */
+        height: 180px; /*设置div高度*/
+        border-width: 5px; /*设置边框宽度*/
+        background:antiquewhite;  /*设置背景色*/
+        }
+        #bt1, #bt2, #bt3,#bt4{display: inline-block;}
+    </style>
+</head>
+
+<header>
+    <div><h1>华为云API</h1></div>
+</header>
+
+<body>
+    <div>
+        <p>华为云开放各云产品的API，方便开发者管理和使用华为云资源。</p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div style="width:56.25rem;">
+        <div id="bt1">
+            <button   style="width: 400px;height: 140px; background-color: antiquewhite ; border: 0;"
+             onclick="window.location.href='#chakan'"><font size="5">查看演示</font><br />了解如何使用华为云API、
+             在线查看列表</button>
+            <!-- <input type="button" value="第一行文字 &#13;&#10; 第二行文字" /> -->
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div id="bt2">
+            <button style="width: 400px;height: 140px;background-color: antiquewhite ; border: 0;"
+               onclick="window.location.href='#ceshi'"><font size="5">API测试</font>
+               <br />提供三种不同的测试方法、满足多种需求</button>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div id="bt3">
+            <button  style="width: 400px;height: 140px;background-color: antiquewhite ; border: 0;"
+             onclick="window.location.href='#daimashengcheng'"><font size="5">代码生成</font><br />
+             提供API的调用代码以满足客户需求</button>
+
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div id="bt4">
+            <button style="width: 400px;height: 140px;background-color: antiquewhite ; border: 0;"
+            onclick="window.location.href='#diaoyong'"><font size="5">SDK调用</font><br />
+            了解如何在项目中调用API代码</button>
+            <!-- <a href="">SDK调用</a> -->
+        </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <!-- <p>欢迎使用华为API生态管理系统!</p> -->
+    <div id="chakan"   style="width:56.25rem;">
+        <h2>查看演示</h2>
+        <h3>准备账号</h3>
+        <p>使用华为API，您需要一个管理员帐号和访问。请在系统控制台中的上创建和查看您的账号，或联系云平台管理员。
+        使用华为API，您需要一个管理员帐号和访问。请在系统控制台中的上创建和查看您的账号，或联系云平台管理员。</p>
+        <h3>在线查看</h3>
+        <p>您可以查看云API的各项信息，下面是API的列表示例。每个API都有各种GET、POST、PUT等方法，您可以展开这些方法。
+        比如展开POST方法，这里代表需要根据user对象创建用户。在空框里是您需要填写的参数，
+        下边给了一个示例模板Response Messages
+        代表了http的响应结果， 有201/401/403/404四种结果，分别代表着created，unauthorized，forbidden，not found
+         四种状态。</p>
+    </div>
+    <br/><br/>
+
+    <div id="ceshi" style="width:56.25rem;">
+        <h2>API测试</h2>
+        <h3>测试规范</h3>
+        <p>测试功能主要是满足您API在线调用和离线调用需求，不用手写调用代码，借助测试工具即可构建、发送http请求、
+        查看响应内容并验证。</p>
+        <p>您可以直接使用Swagger-UI中的<span style="color: red;">Try it out</span>进行测试，
+        也可以选择左侧导航栏的<span style="color: red;">测试</span>进行三种不同测试工具的选择。</p>
+        <p>如下图，在1处打开post方法输入用户数据，2处选择参数格式，点击3处的<span style="color: red;">
+        Try it out</span>，可以看到4处响应体为“添加成功”，5处生成Curl的测试命令供用户复制。</p>
+        <p>如果选择Postman后您可以下载适用于Postman的json文件，选择curl可以复制curl的测试命令。</p>
+    </div>
+    <br/><br/>
+
+    <div  id="daimashengcheng"    style="width:56.25rem;">
+        <h2>代码生成</h2>
+        <h3>Java环境准备</h3>
+        <p>您需要首先配置本地Java开发环境，此外，如果您使用Apache Maven来管理Java项目，需在项目的pom.xml中文件
+        加入相应的依赖项，如下图所示。</p>
+        <h3>生成代码</h3>
+        <p>针对具备权限的系统账号，根据您输入的API链接、编程语言及版本信息，系统将为您提供相应的客户端代码，
+        供您加载到您的项目中使用。</p>
+    </div>
+    <br />
+    <br />
+    <div id="diaoyong" style="width:56.25rem;">
+        <h2>使用JAVA SDK</h2>
+        <p>针对生成的SDK，我们将提供调用代码示例。以下是以Java语言为例的使用方法及调用代码示例。</p>
+        <p>根据您选择的API，我们将提供相应的调用代码示例供您参考，下图为一段调用代码示例。</p>
+    </div>
+    <div id="biankuang" style="width:900px; height: 160px; background-color: black; color: white">
+        <code>
+            <p>&nbsp;</p>
+            <p>&nbsp;&nbsp;HuaweiClient hwClient = new DefaultHuaweiClient("https://openapi.huawei.com/gateway.do",“para1”,”para2”);</p>
+            <p>&nbsp;&nbsp;HuaweiRequest request = new HuaweiRequest (“para”);</p>
+            <p>&nbsp;&nbsp;HuaweiResponse response = hwClient.execute(request);</p>
+            <p>&nbsp;&nbsp;System.out.println(response.returnValue );</p>
+        </code>
+    </div>
+    <br/><br/><br/><br/><br/><br/><div>
+        <center>HUAWEI</center>
+    </div>
+
+</body>
+</html>

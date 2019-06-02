@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../webjars/layui/css/layui.css">
+    <script type="text/javascript" src="../../webjars/layui/layui.js"></script>
+    <script type="text/javascript" src="../../webjars/js/jquery.js"></script>
+    <title>Curl</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#get_curl").click(function () {
+                $("#result_curl").html("wait..."); //val()
+            });
+            return false;
+        });
+    </script>
+</head>
+
+<body>
+<div style="vertical-align: middle;text-align: center;margin-top: 80px;">
+    <div>API:
+        <select class="layui-select layui-select-group">
+            <option value ="service">Service</option>
+            <option value ="user">User</option>
+        </select>
+    </div>
+    <br/>
+
+    <textarea id="result_curl" style="width: 600px; height: 80px;background-color: black;color: white"></textarea>
+    <br><br><br>
+    <button class="layui-btn" style="text-align:center;" id="get_curl">Get</button>
+</div>
+</body>
+</html>
