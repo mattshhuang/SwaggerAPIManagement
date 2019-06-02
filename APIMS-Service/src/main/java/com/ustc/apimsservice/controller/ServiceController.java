@@ -18,7 +18,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping(path = "/services",  produces = "application/json; charset=utf-8")
-public class ServiceController {
+ class ServiceController {
     static Map<Long, Service> map = new HashMap<>();
 
     /**
