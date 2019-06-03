@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>View Test</title>
+    <link href="css/mystyle.css">
+    <script type="text/javascript" src="../../../../../APIMS-Service/src/main/resources/webjars/js/jquery-1.11.3.js"></script>
+    <!--<script type="text/javascript">-->
+    <!--$(document).ready(function () {-->
+    <!--$("#testAjax").click(function () {-->
+    <!--var url = this.href;-->
+    <!--$("#details").load(url);-->
+    <!--return false;-->
+    <!--});-->
+    <!--});-->
+    <!--</script>-->
 </head>
+
 <body>
-    <div>
-        欢迎来到测试页面！
-    </div>
-    <span>
-        <a th:if="${session.loginUser == null}" href="http://login.huaweiapims.com:9999/view/login?target=http://www.huaweiapims.com:8889/view/index">登录</a>
-        <a th:unless="${session.loginUser == null}" href="http://login.huaweiapims.com:9999/logout?target=http://www.huaweiapims.com:8889/view/index">退出</a>
-    </span>
-    <p th:unless="${session.loginUser == null}">
-        <span style="color: deepskyblue;" th:text="${session.loginUser.username}"></span>
-        已登录
-    </p>
+<div>
+    欢迎来到CAS测试页面！
+</div>
+<!--<span>-->
+<!--<a th:if="${session.loginUser == null}" href="http://login.huaweiapims.com:9999/view/login?target=http://www.huaweiapims.com:8889/view/index">登录</a>-->
+<!--<a th:unless="${session.loginUser == null}" href="http://login.huaweiapims.com:9999/logout?target=http://www.huaweiapims.com:8889/view/index">退出</a>-->
+<!--</span>-->
+<!--<p th:unless="${session.loginUser == null}">-->
+<!--<span style="color: deepskyblue;" th:text="${session.loginUser.username}"></span>-->
+<!--已登录-->
+<!--</p>-->
+
+<!--<br/>-->
+<!--<a id="testAjax" href="test.html">TEST AJAX</a>-->
+<!--<div id="details"></div>-->
+
+<div style="color: red;" class="sideicon">
+    <a href="/login">
+        <p th:if="${name != null}">Login</p>
+    </a>
+    <a href="/logout">
+        <p th:unless="${name != null}">Logout</p>
+    </a>
+</div>
 </body>
 </html>

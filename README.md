@@ -9,7 +9,8 @@
 为了美观，可以在本地的hosts文件中添加一条url到域名的映射关系。
 ~~~
 测试页面：www.huaweiapims.com:8889/view/index
-新登录页面http://www.huaweiapims.com:9999/view/login
+基于CAS的测试登录页面：www.huaweiapims.com:8889/index
+登录页面http://www.huaweiapims.com:9999/view/login(自己实现登录规则)
 APIMS页面：www.huaweiapims.com:8888/index
 SwaggerUI原生页面：www.huaweiapims.com:8888/swagger-ui.html
 登录账户：
